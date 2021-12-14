@@ -1,0 +1,14 @@
+simple_strategy_v0_1 	- original idea, too convoluted, just archived
+simple_strategy_v0_2 	- improved, removed logbook and pairs, create sell order immediately after buying
+simple_strategy_v0_3 	- can input duration between buys, how much to buy each time, and whether to buy at first launch(or wait for the duration) and a buch of other inputs
+			- fixed order_closed() too, forgotten to set a variable to it before calling it, why it never crashed is beyond me
+simple_strategy_v0_4	- added some safety nets, like maximumprice to stop buying
+			- (Wanted to add try excepts but i dont think it is necesarry? If it crash its better the whole thing stops)
+simple_strategy_v0_5 	- adjusted the buy and sell price so that it gets passed more likely
+			- if it doesnt past for too long, just cancel the order and buy again
+simple_strategy_v0_6	- I realised if i cancelthe buy order i will be losing money, so instead of cancelling, brought back the logbook!
+			- the logbook will hold all pending requests, so hold the id of the buy order, and the supposed sell price, and only put down the sell price after confirm buy order has been filled, and every iteration just check on them
+			- I NEED TO CHECK OPEN BUY ORDER BY ID NOW, NOT JUST THAT IT IS OPEN AND BUY, BECAUSE THERE MAY BE MULTIPLE OPENS
+			- added default parameter options
+simple_strategy_v0_6_1	- addedd try ecxcept, sometimes the request to the server times out and crashes the whole program
+simple_strategy_v0_7	- check the highest bid at a particular time and bid just slightly above it
