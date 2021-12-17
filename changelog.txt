@@ -11,4 +11,9 @@ simple_strategy_v0_6	- I realised if i cancelthe buy order i will be losing mone
 			- I NEED TO CHECK OPEN BUY ORDER BY ID NOW, NOT JUST THAT IT IS OPEN AND BUY, BECAUSE THERE MAY BE MULTIPLE OPENS
 			- added default parameter options
 simple_strategy_v0_6_1	- addedd try ecxcept, sometimes the request to the server times out and crashes the whole program
+simple_strategy_v0_6_2	- added a few more print statements: to inform price of last buy, price of pending buy order 
 simple_strategy_v0_7	- check the highest bid at a particular time and bid just slightly above it
+simple_strategy_v0_8	- if go belowe certain price, bid more + higher percentage, vice versa 
+
+
+min_max_strategy_v0_1	- if it drops more than 1% from current price, put a rather big order, then when it drops another 1%, put another big order, continue doing this
