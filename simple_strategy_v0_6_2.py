@@ -30,8 +30,8 @@ USING ACTUAL ACCOUNT
 ####################
 ''')
 gemini = ccxt.gemini({
-    'apiKey': 'account-NgLOHsACrvRgoee5E4Re',
-    'secret': 'obhesUPKQPDPhAPdMSSF4V6hhrg'
+    'apiKey': '<YOUR API KEY>',
+    'secret': '<YOUR API SECRET'
     })
 
 ###SANDBOX
@@ -42,8 +42,8 @@ gemini = ccxt.gemini({
 ##''')
 ##gemini = ccxt.gemini()
 ##gemini.set_sandbox_mode(True) #need to set into sandbox mode
-##gemini.apiKey = ('account-MQhm4ikPXK7eaQ9T7Zn5')
-##gemini.secret = ('n5hBt3mP7VE3ezsJunM2fL7D8HH')
+##gemini.apiKey = ('<YOUR API KEY')
+##gemini.secret = ('<YOUR API SECRET>')
 
 #function to get latest price
 def get_price(symbol):
